@@ -1,0 +1,169 @@
+
+/* == TIPOGRAFÍAS ==  */
+@font-face {
+	font-family: Poppins;
+	src: url(../fonts/poppins/Poppins-Bold.ttf);
+}
+@font-face {
+	font-family: PlayfairDisplay;
+	src: url(../fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+h1 {
+	font-size: 3em;
+}
+h2 {
+	font-size: 2.5em;
+}
+h3 {
+	font-size: 2.2em;
+}
+h4 {
+	font-size: 1.8em;
+}
+h5 {
+	font-size: 1.4em;
+}
+h6 {
+	font-size: 1.2em;
+}
+p {
+	font-size: 1em;
+}
+h1, h2, h3, h4, h5, h6, p {
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 15px;
+	line-height: 1.5em;
+}
+.lead_text {
+	font-size: 1.4em;
+}
+.little_text{
+	font-size: 0.8em;
+	color: #000;
+}
+.footer_text {
+	font-size: 0.8em;
+	color: #fff;
+	margin-bottom: 0;
+}
+/* == ENLACES == */
+a.main_link {
+	color: #B2241F;
+	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
+	transition: all 300ms ease;
+}
+a.main_link:hover {
+	color: #EFBB55;
+	text-decoration: none;
+}
+/* == BOTONES == */
+.main_btn {
+	display: inline-block;
+	background: #B2241F;
+	color: white;
+	padding: 10px 20px;
+	text-decoration: none;
+	margin: 20px 0;
+	text-align: center;
+	width: 12%;
+	border-radius: 12px;
+	font-family: "Montserrat", sans-serif;
+	transition: all 300ms ease;
+}
+.main_btn:hover {
+	background: black;
+	color: white;
+	cursor: pointer;
+}
+/* == TOP MENU == */
+.logo {
+	margin-bottom: 20px;
+}
+.top_menu {
+	width: 96%;
+	display: flex;
+	justify-content: center;
+	background-color: #b2241f;
+	font-family: PlayfairDisplay;
+}
+a.enlace_top_menu:link, a.enlace_top_menu:visited {
+	width: auto;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #FFECC5;
+	text-decoration: none;
+	margin: 0 15px;
+	transition: all 300ms ease;
+	font-family: "Montserrat", sans-serif;
+}
+a.enlace_top_menu:hover, a.enlace_top_menu:active {
+	color: #EFBB55;
+}
+/* == SIDE MENU == */
+.title-categorias {
+	padding: 20px 30px;
+	border-bottom: 1px solid #2d2d2d;
+	margin-bottom: 0;
+}
+a.enlace_side_menu:link, a.enlace_side_menu:visited {
+	width: auto;
+	font-weight: bold;
+	font-size: 0.9rem;
+	color: #191919;
+	text-decoration: none;
+	padding: 20px 40px;
+	display: block;
+	border-bottom: 1px solid #2d2d2d;
+	transition: box-shadow 0.4s linear;
+	transform: scale(1.05);
+}
+a.enlace_side_menu:hover, a.enlace_side_menu:active {
+	color: #fff;
+	background-color: #000;
+}
+/* == LINK IMAGES == */
+.boton-imagen {
+	filter: saturate(90%);
+	margin-bottom: 15px;
+	transition: all 300ms ease;
+}
+.boton-imagen:hover {
+	filter: saturate(160%);
+}
+/* == MEDIA QUERIES - TABLET == */
+@media screen and (max-width: 768px) {
+	.footer_text {
+		text-align: center;
+	}
+	.main_btn {
+		width: 20%;
+	}
+}
+/* == MEDIA QUERIES - SMARTPHONE == */
+@media screen and (max-width: 425px) {
+	a.enlace_top_menu, a.enlace_side_menu {
+		margin: 0;
+		padding: 10px 0;
+	}
+	.top_menu {
+		padding: 0;
+	}
+	.footer_text {
+		text-align: center;
+	}
+	.main_btn {
+		width: 88%;
+	}
+}
+/*ANIMACIONES*/
+@keyframes animacion-intro {
+	from {
+	  filter: opacity(0.4%);
+	}
+	to {
+	  filter: opacity(500%);
+	}
+}
+
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css')
